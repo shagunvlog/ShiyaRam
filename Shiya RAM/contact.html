@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div id="contactus">
+  <h1>Contact Us</h1>
+  <form  action="index.html">
+    <div class="form-type">
+      <label for="query">Type of Query</label>
+      <select id="query" name="myquery">
+      <option value="sel" selected>Select</option>
+      <option value="ord">Order related issues</option>
+      <option value="site">Site related issues</option>
+      <option value="fed">Complaint related issue</option>
+      <option value="others">Others</option>
+      </select>
+    </div>
+    <div class="form-type">
+      <label for="name">Name:</label>
+      <input type="text" name="myname" id="name">
+    </div>
+    <div class="form-type">
+      <label for="Email">Email:</label>
+      <input type="email" name="myemail" id="Email">
+    </div>
+    <div class="form-type">
+      <label for="Phone no:">Phone no:</label>
+      <input type="text" name="my phone no." id="Phone no:">
+    </div>
+    <div class="radio">
+   <label for="Are you a member of SiyaRam Online Foodshop?">Are you a member of SiyaRam Online Foodshop?</label>
+   <br>
+   <label for="Are you a member of SiyaRam Online Foodshop?">Yes</label>
+  <input type="radio" name="mymem" id="Are you a member of SiyaRam Online Foodshop?">
+  <br>
+   <label for="Are you a member of SiyaRam Online Foodshop?">No</label>
+   <input type="radio" name="mymem" id="Are you a member of SiyaRam Online Foodshop?">
+  </div>
+  <div class="form-type">
+  Ellaborate your query: <br><textarea name="mytext" rows="10" cols="40"></textarea>
+  </div>
+  <div class="form-type">
+    <input type="Submit" value="Submit now">
+    <input type="Reset" value="Reset now">
+  </div>
+  </form>
+</div>
+  </body>
+</html>

@@ -1,0 +1,308 @@
+/* css reset */
+* {
+  margin:0;
+  padding: 0;
+}
+/* header styling */
+#SR {
+  color: #ff4c68;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Itim', cursive;
+}
+#of {
+  text-align: center;
+color: black;
+font-size: 21px;
+font-family: 'Ubuntu', sans-serif;
+}
+/* navigation bar styling */
+
+/* navbar image styling */
+#navbar img{
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+/* navbar funtionality */
+
+/* Navigation bar styling */
+#navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  /* Vh unit is viewport height & Vw unit is viewport width in broswer */
+  height: 15vh;
+  width: 100vw;
+  font-family: 'Itim', cursive;
+margin-top: 10px;
+border: 2px solid black;
+border-radius: 15px;
+}
+/* navbar content functionality */
+
+/* navbar content */
+#navcontent {
+  display: flex;
+  /* Items are positioned in the center of the container */
+    justify-content: center;
+}
+
+/* navbar content styling */
+ul li{
+  list-style: none;
+  margin: 15px;
+  border-radius: 10px;
+}
+ul li a{
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+/* rgb stand for red blue green color resources */
+ul li a:hover{
+  background-color: rgb(245,10,10);
+  border-radius: 10px;
+}
+/* web background image designing */
+#content1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 63vh;
+}
+ /* seeting the background img using before pseudo selector */
+ #content1::before{
+   content: "";
+   background: url("./1..webp") no-repeat center center/cover;
+   width: 100vw;
+   height: 59vh;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+  font-family: 'Itim', cursive;
+   margin-right: 45px;
+   font-weight: bold;
+   /* The z-index property specifies the stack order of an element. */
+   z-index: -1;
+   opacity: 0.89;
+  border: 2px solid black;
+  border-bottom-left-radius:100px;
+ }
+
+ #r1{
+   color: black;
+   font-weight: bold;
+   font-size: 2rem;
+   text-align: center;
+   margin-top: 35px;
+ }
+
+/* button styling */
+.btn{
+  margin-top: 15px;
+  border-radius: 15px;
+  border: 3px solid white;
+  background-color: rosybrown;
+  font-size: 20px;
+  font-weight: bold;
+font-family: 'Ubuntu', sans-serif;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: red;
+}
+#content2{
+  display:flex;
+  justify-content: space-evenly;
+}
+#r2{
+  width: 24vw;
+  height: 21vh;
+  box-shadow: 2px 7px 16px 19px;
+  margin-top: 51px;
+  margin-bottom: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  margin-right: 38px;
+  border-radius: 40px;
+}
+#r2::before{
+  content: "";
+  background: url("./2.jpeg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 24vw;
+  height: 21vh;
+  z-index: -1;
+border-radius: 40px;
+}
+#r3{
+    position:relative;
+   width: 24vw;
+  height: 21vh;
+  box-shadow: 2px 7px 16px 19px;
+  margin-top: 51px;
+  margin-bottom: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 38px;
+  border-radius: 40px;
+}
+#r3::before{
+  content: "";
+  background: url("./3..jpg") no-repeat center center/cover;
+  width: 24vw;
+  height: 21vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+border-radius: 40px;
+}
+.col{
+  float: left;
+  width: 50%;
+}
+#fp{
+  text-align: center;
+  color: #ff4c68;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+.food{
+  text-align: center;
+    font-family: 'Itim', cursive;
+    margin-top: 10px;
+}
+#content3{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+margin: 41px;
+}
+#r4{
+  width: 29vw;
+ height: 360px;
+ border:2px solid black;
+ background: url("./4..jpeg") no-repeat center center/cover;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ border-radius: 15px;
+}
+#r5{
+  width: 29vw;
+ height: 360px;
+ border:2px solid black;
+ background: url("./6..jpeg") no-repeat center center/cover;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ border-radius: 15px;
+}
+#r6{
+  width: 29vw;
+ height: 360px;
+ border:2px solid black;
+ background: url("./5.webp") no-repeat center center/cover;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ border-radius: 15px;
+}
+/* footer styling */
+footer{
+  text-align: center;
+}
+/* contus us styling */
+#contactus{
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items:center;
+background: #E4F9F5;
+}
+.form-type input, .form-type select, .form-type textarea{
+width: 92%;
+padding: 0.5rem;
+}
+/* changing the color of placeholder */
+::placeholder{
+  color: gray;
+}
+/* making the web responsive using media queries */
+@media only screen and (max-width:1131px)
+{
+  #r4{
+    width: 42vw;
+  }
+  #r5{
+    width: 45vw;
+  }
+  #r6{
+    width:90vw;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width:600px) and (max-width:781px)
+{
+  #r4{
+    width: 84vw;
+    margin: auto;
+    margin-left: 22px;
+  }
+  #r5{
+    width: 84vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+  #r6{
+    width: 84vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+}
+@media only screen and (max-width:600px)
+{
+  #r4{
+    width: 78vw;
+    margin: auto;
+    margin-left: 3px;
+  }
+  #r5{
+    width: 78vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 3px;
+  }
+  #r6{
+    width: 78vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 3px;
+  }
+}
+@media only screen and (min-height:1000px){
+    #navbar{
+        height:10vh;
+    }
+    #content1::before{
+        height:39vh;
+    }
+    #content1{
+        height:44vh
+    }
+}
